@@ -1,0 +1,40 @@
+/* Source: https://gist.github.com/justrainer/750db759fd7caea08979a24f77ef9147 */
+
+/* Hide Super React button and Context Menu */
+div[aria-label="Add Super Reaction"],
+div[class^="item-5ApiZt labelContainer-35-WEd colorPremiumGradient-38tGFG colorDefault-2_rLdz"] {display: none}
+
+/* Remove Phone indicator from User List */
+#app-mount .wrapper-3Un6-K foreignObject[mask*=mobile]:after {display: none !important}
+
+/* Remove Nitro Ads */
+button[aria-label="Send a gift"],
+div.premiumIconWrapper-32h0Ri {display: none !important}
+
+/* hide all stock buttons in chatbox */
+div[class^="channelTextArea-"] div[class^="buttons-"] > .expression-picker-chat-input-button {display: none}
+
+/* hide "beta" badge on members channel */
+div.content-2V2neN > div.newChannel-3uRBAS:last-child {display: none}
+
+/* hide booster icons in memberlist */
+aside[class^="membersWrap-"] div[role=button]:has(svg[class^="premiumIcon-"]) {display: none}
+
+/* hide "server will lose boost level" window */
+div[class^="sidebar-"] > nav > div[class^="container-"]:has(div[class^="channelNotice-"]) {display: none}
+
+/* hide avatar art ads */
+/* it is still accessible on the nitro page if you need it */
+div#profile-customization-tab > div[class*="premiumFeatureBannerBackground"],
+div[class*="userPopoutInner"] > div[class*="animation"] {display: none}
+
+/* remove unnecessary settings, both in settings and in cogwheel-right-click */
+/* family center */
+div[aria-label="User Settings"] > div[aria-label="Family Center"],
+div#user-settings-cog div#user-settings-cog-Family_Center {display: none}
+
+/* hide nitro in home tab */
+div[data-list-id^="private-channels-uid"] > ul > li:has(a[href="/store"]) {display: none}
+
+/* remove "create thread from replies" field in chatbox */
+div.threadSuggestionBar-3ExSyc {display: none}
