@@ -12,20 +12,24 @@ button[aria-label="Send a gift"],
 div.premiumIconWrapper-32h0Ri {display: none !important}
 
 /* hide all stock buttons in chatbox */
-div[class^="channelTextArea-"] div[class^="buttons-"] > .expression-picker-chat-input-button {display: none}
+div[class^="channelTextArea"] div[class^="buttons"] > .expression-picker-chat-input-button {display: none}
+
+/* remove "thread suggestion bar" field in chatbox */
+div[class^="channelTextArea"] div[class*="threadSuggestionBar"] {display: none}
 
 /* hide "beta" badge on members channel */
 div.content-2V2neN > div.newChannel-3uRBAS:last-child {display: none}
 
 /* hide booster icons in memberlist */
-aside[class^="membersWrap-"] div[role=button]:has(svg[class^="premiumIcon-"]) {display: none}
+aside[class^="membersWrap"] div[role=button]:has(svg[class^="premiumIcon"]) {display: none}
 
 /* hide "server will lose boost level" window */
-div[class^="sidebar-"] > nav > div[class^="container-"]:has(div[class^="channelNotice-"]) {display: none}
+div[class^="sidebar"] > nav > div[class^="container"]:has(div[class^="channelNotice"]) {display: none}
 
 /* hide avatar art ads */
 /* it is still accessible on the nitro page if you need it */
 div#profile-customization-tab > div[class*="premiumFeatureBannerBackground"],
+div#profile-customization-tab > div[class*="falloween"],
 div[class*="userPopoutInner"] > div[class*="animation"] {display: none}
 
 /* remove unnecessary settings, both in settings and in cogwheel-right-click */
@@ -35,9 +39,6 @@ div#user-settings-cog div#user-settings-cog-Family_Center {display: none}
 
 /* hide nitro in home tab */
 div[data-list-id^="private-channels-uid"] > ul > li:has(a[href="/store"]) {display: none}
-
-/* remove "create thread from replies" field in chatbox */
-div.threadSuggestionBar-3ExSyc {display: none}
 
 /* fix profile popouts shifting the client UI upwards */
 .userPopoutOverlayBackground-3A0Pcz {max-height: 60vh}
