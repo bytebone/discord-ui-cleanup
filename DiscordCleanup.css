@@ -37,8 +37,17 @@ div[class*="userPopoutInner"] > div[class*="animation"] {display: none}
 div[aria-label="User Settings"] > div[aria-label="Family Center"],
 div#user-settings-cog div#user-settings-cog-Family_Center {display: none}
 
-/* hide nitro in home tab */
+/* hide nitro and shop in home tab */
 div[data-list-id^="private-channels-uid"] > ul > li:has(a[href="/store"]) {display: none}
+div[data-list-id^="private-channels-uid"] > ul > li:has(a[href="/shop"]) {display: none}
+/* adjust uneven spacing */ 
+div[data-list-id^="private-channels-uid"] > ul > h2[class^="privateChannelsHeaderContainer"] {
+    height: 30px;
+    padding: 10px 8px 4px 18px;
+}
 
 /* fix profile popouts shifting the client UI upwards */
 .userPopoutOverlayBackground-3A0Pcz {max-height: 60vh}
+
+/* remove a small spacer after the discovery button in the server list */
+nav[class*="guilds"] div[class*="listItem"]:has(div[class*="guildSeparator"]) {display: none}
