@@ -38,3 +38,6 @@ div[data-list-id^="private-channels-uid"] > ul > li:has(a[href="/store"]) {displ
 
 /* remove "create thread from replies" field in chatbox */
 div.threadSuggestionBar-3ExSyc {display: none}
+
+/* fix profile popouts shifting the client UI upwards */
+.userPopoutOverlayBackground-3A0Pcz {max-height: 60vh}
