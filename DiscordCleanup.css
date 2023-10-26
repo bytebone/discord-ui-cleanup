@@ -2,7 +2,7 @@
 
 /* Hide Super React button and Context Menu */
 div[aria-label="Add Super Reaction"],
-div[class^="item-5ApiZt labelContainer-35-WEd colorPremiumGradient-38tGFG colorDefault-2_rLdz"] {display: none}
+div[aria-label="Message Actions"] div[role="group"] > div:has(div#message-add-reaction-1) {display: none}
 
 /* Remove Phone indicator from User List */
 #app-mount .wrapper-3Un6-K foreignObject[mask*=mobile]:after {display: none !important}
