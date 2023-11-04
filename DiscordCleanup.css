@@ -4,9 +4,6 @@
 div[aria-label="Add Super Reaction"],
 div[aria-label="Message Actions"] div[role="group"] > div:has(div#message-add-reaction-1) {display: none}
 
-/* Remove Phone indicator from User List */
-#app-mount .wrapper-3Un6-K foreignObject[mask*=mobile]:after {display: none !important}
-
 /* Remove Nitro Ads */
 button[aria-label="Send a gift"],
 div.premiumIconWrapper-32h0Ri {display: none !important}
