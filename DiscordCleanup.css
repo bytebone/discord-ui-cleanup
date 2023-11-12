@@ -36,11 +36,6 @@ div#user-settings-cog div#user-settings-cog-Family_Center {display: none}
 
 /* hide nitro and shop in home tab */
 div[data-list-id^="private-channels-uid"] > ul > li:has(a[href="/store"], a[href="/shop"]) {display: none}
-/* adjust uneven spacing */ 
-div[data-list-id^="private-channels-uid"] > ul > h2[class^="privateChannelsHeaderContainer"] {
-    height: 25px;
-    padding: 0px 8px 0px 18px;
-}
 
 /* fix profile popouts shifting the client UI upwards */
 .userPopoutOverlayBackground-3A0Pcz {max-height: 60vh}
